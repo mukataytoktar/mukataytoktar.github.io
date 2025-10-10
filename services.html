@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Digibank</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-container">
+    <header class="site-header">
+      <div class="header-container container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="logo">Digibank</a>
+        <nav>
+          <ul class="nav-list d-flex gap-3 m-0">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="gallery.html" class="nav-link">Products</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="services-page d-flex flex-column justify-content-center align-items-center text-center">
+      <div class="container">
+        <h1 class="mb-4">Our Services</h1>
+        <p class="lead mb-5">Explore the key features that make Digibank a truly smart digital banking platform.</p>
+        <div class="row justify-content-center gy-4">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="feature-card p-4 h-100">
+              <img src="https://img.icons8.com/color/96/bank-cards.png" alt="Card service" class="feature-icon mb-2">
+              <h3>Debit & Credit Cards</h3>
+              <p>Instant card issuance with global support and smart limits.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="feature-card p-4 h-100">
+              <img src="https://img.icons8.com/color/96/money-bag.png" alt="Savings" class="feature-icon mb-2">
+              <h3>Smart Savings</h3>
+              <p>Earn more with flexible savings accounts and goal-based plans.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="feature-card p-4 h-100">
+              <img src="https://img.icons8.com/color/96/mobile-payment.png" alt="Mobile app" class="feature-icon mb-2">
+              <h3>Mobile Banking</h3>
+              <p>Full account access, transactions, and reports right on your phone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Digibank — Smart Digital Banking</p>
+      <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+    </footer>
+  </div>
+</body>
+</html>
